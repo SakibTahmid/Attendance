@@ -1,0 +1,13 @@
+<h1>Attendance Sheet</h1>
+
+  <form action="/attbook/<%=student.attBookID%>" method="POST" >
+    <% student.forEach(student=> { %>
+      <label for="<%=student.roll%>"><input type="checkbox" id="<%=student.roll%>" name="<%=student.roll%>"><%=student.roll%></label>
+    <% }) %>
+    <ul>
+      <!--dpt,sem,shift,section,sub-->
+     <li><%=student.attBookID%></li>
+
+    </ul>
+    <input type="submit">
+  </form>

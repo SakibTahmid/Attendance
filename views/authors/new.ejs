@@ -1,0 +1,26 @@
+<h1>new author</h1>
+<form action="/students" method="POST">
+    <label for="authorName">Name</label>
+    <input type="text" name="authorName">
+<label for="department">department</label>
+<input type="text" name="department">
+<label for="semister">semister</label>
+<input type="number" name="semister">
+<label for="studentsName">shift</label>
+<input type="number" name="shift">
+<label for="section">section</label>
+<input type="text" name="section">
+<label for="studentsName">roll</label>
+<input type="number" name="roll">
+
+    <a href="/students">Cancel</a>
+    <button type="submit">Save</button>
+</form>
+
+<form action="/addManyStudents" method="POST" enctype="multipart/form-data">
+    <input type="file" name="students_file">
+    <input type="submit">
+</form>
+<form action="/saveStuDataDb" method="POST">
+    <input type="submit">
+</form>
